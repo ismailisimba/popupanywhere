@@ -1,5 +1,6 @@
 export {popupany as default};
 const settings_28092021utc3ismizo = {};
+const popUp = {};
 var parEle = null;
 settings_28092021utc3ismizo["obj"] = {};
 
