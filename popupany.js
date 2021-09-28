@@ -248,7 +248,7 @@ class popupany {
     matchInputObjStyle(obj){
         let styleObj = {};
     
-        if(obj.style==="auto"){
+        if(!"color" in obj){
             styleObj= this.matchParentStyle(parEle);
         }else{
             styleObj["color"] = obj.color;
