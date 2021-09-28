@@ -88,10 +88,10 @@ class popupany {
                      settings_28092021utc3ismizo.obj.content = this.fillBasicList();
                 }
 
-                if("content" in obj && "basic-action" in obj.content && obj.parent && obj.parent.nodeType){
+                if("content" in obj && "basic-action" in obj.content &&!"custom1" in obj.content &&!"custom2" in obj.content && obj.parent && obj.parent.nodeType){
                     //addInternalTempList
                     settings_28092021utc3ismizo.obj.content = this.fillBasicList();
-                }else if("content" in obj && "basic-action" in obj.content && "custom" in obj.content && obj.parent && obj.parent.nodeType){
+                }else if("content" in obj && "basic-action" in obj.content && "custom1" in obj.content && obj.parent && obj.parent.nodeType){
                     //readAddedBasicList
                     settings_28092021utc3ismizo.obj.content = this.readContentInput();
                 }else if("content" in obj && Array.isArray(obj.content) && obj.parent && obj.parent.nodeType){
