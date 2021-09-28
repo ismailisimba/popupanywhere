@@ -256,7 +256,7 @@ class popupany {
             styleObj["height"] = obj.height ? obj.height : "13px";
             styleObj["width"] = obj.width.slice(0,obj.width.length-1);
             styleObj.width = parseInt(styleObj.width,10);
-            styleObj.width = (styleObj.width/100)*getPosStyles(parEle).width+"px";
+            styleObj.width = (styleObj.width/100)*this.getPosStyles(parEle).width+"px";
             styleObj["margin"] = obj.margin ? obj.margin : "0px";
             styleObj["padding"] = obj.padding ? obj.padding : "6px";
             styleObj.padding = styleObj.padding.slice(0,styleObj.padding.length-2);
