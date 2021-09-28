@@ -29,7 +29,7 @@ class popupany {
     fillObject (obj) {
         const fillObjectObj = {};
         fillObjectObj["error"] = null;
-        fillobject:try{
+        try{
             if(typeof obj ==="object"){
                 settings_28092021utc3ismizo.obj = this.makeBasicObj();
                 parEle = obj.parent;
@@ -82,7 +82,7 @@ class popupany {
                 this.makePopUp(settings_28092021utc3ismizo.obj);
             }else{
                 fillObjectObj.error = "Error: Invalid Object Structure."
-                break;
+                
             }
 
         }catch(error){
