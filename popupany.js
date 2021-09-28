@@ -93,10 +93,10 @@ class popupany {
                     settings_28092021utc3ismizo.obj.content = this.fillBasicList();
                 }else if("content" in obj && "basic-action" in obj.content && "custom1" in obj && obj.parent && obj.parent.nodeType){
                     //readAddedBasicList
-                    settings_28092021utc3ismizo.obj.content = this.readContentInput();
+                    settings_28092021utc3ismizo.obj.content = this.readContentInput(obj);
                 }else if("content" in obj && Array.isArray(obj.content) && obj.parent && obj.parent.nodeType){
                     //readAddedMenuList
-                    settings_28092021utc3ismizo.obj.content = this.readContentInput();
+                    settings_28092021utc3ismizo.obj.content = this.readContentInput(obj);
                 }else if(obj.parent && obj.parent.nodeType){
                     //addInternalTempList
                     settings_28092021utc3ismizo.obj.content = this.fillBasicList();
@@ -229,10 +229,10 @@ class popupany {
     
        
             
-        if(obj2.content==="basiclist"){
-            obj = JSON.parse(obj2["basiclist-items"]);
-        }else if(obj2.content==="menulist"){
-            obj = JSON.parse(obj2.menulist);
+        if("basiclist-items" in obj2.content){
+            obj = JSON.parse(obj2.content);
+        }else if(Array.isArray(obj2.content)){
+            obj = JSON.parse(obj2.content);
         }else{
           let obj2 = this.fillBasicList();  
          obj= obj2;
