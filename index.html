@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+
+  <head>
+    <meta charset="utf-8" />
+  <link href="./fonts.css" type="text/css" rel="stylesheet">
+   <link href="./style.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pop Up Anywhere Demo</title>
+    
+  </head>
+
+
+
+  <body>
+
+    <div class="maincontainer">
+        <h1>Pop Up Anywhere Demo</h1>
+
+        <div>
+        <label for="side">side:</label> 
+        <select name="side" id="side" class="side inputtop">
+            <option value="auto">Auto</option>
+            <option value="top">Top</option>
+            <option value="bottom">Bottom</option>
+            <option value="left-top">Top Left</option>
+            <option value="right-top">Top Right</option>
+            <option value="left-bottom">Bottom Left</option>
+            <option value="right-bottom">Bottom Right</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="style">style:</label> 
+        <select name="style" id="style" class="style inputtop">
+            <option value="auto">Auto</option>
+            <option value="custom">Custom</option>
+        </select>
+        </div>
+
+        <div>
+        <label for="action">action:</label> 
+        <select name="action" id="action" class="action inputtop">
+            <option value="auto">Auto</option>
+           <!-- <option value="mouseover">Mouse Hover</option>
+            <option value="click">Click</option>
+            <option value="scroll">Scroll</option> -->
+        </select>
+        </div>
+
+        <div>
+        <label for="content">content:</label> 
+        <select name="content" id="content" class="content inputtop">
+            <option value="auto">Auto</option>
+            <option value="basiclist">Basic List</option>
+            <option value="menulist">Menu List</option>
+        </select>
+        </div>
+
+        <div class="lower" id="lower">
+            <div class="demo">
+                <label for="demo">Arrival:</label>
+                <input type="text" id="demo" name="demo"
+                value="default" placeholder="demo">
+            </div>
+        </div>
+
+        <button id="updatebutt">Update Settings</button>
+
+    </div>
+
+    <div class="canvas">
+        <div class="canvasinside" id="canvasinside">Double Click Anywhere To Position Me</div>
+    </div>
+  
+
+    <script src="./script.js"></script>
+
+  </body>
+</html>

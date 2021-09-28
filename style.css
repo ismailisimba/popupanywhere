@@ -1,0 +1,143 @@
+html{
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+}
+
+body{
+    min-height: 85vh;
+    min-width: 96%;
+    background-color: lightblue;
+}
+
+.maincontainer{
+    min-width: 480px;
+    width:69%;
+    max-width: 690px;
+    padding: 12px 18px;
+    box-sizing: border-box;
+    background-color: transparent;
+    min-height: 64px;
+
+    margin: 0 auto;
+    margin-top: 69px;
+
+    border: 1.69px solid black;
+    box-shadow: 1px 1px 3px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    text-align: center;
+    z-index: 1000;
+
+    position: relative;
+
+}
+
+.maincontainer div:hover{
+    background-color: grey;
+}
+
+.maincontainer h1{
+    min-width: 96%;
+}
+
+.maincontainer .lower{
+    position: relative;
+    min-width: 96%;
+    margin-top: 18px;
+    background-color: transparent;
+}
+
+.maincontainer .lower #demo{
+   visibility: collapse;
+}
+
+.maincontainer .lower label{
+    visibility: collapse;
+ }
+
+.maincontainer select{
+    font-size: 11px;
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    letter-spacing: .69px;
+}
+
+.maincontainer label{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: .69px;
+}
+
+
+.canvas{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    min-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: transparent;
+    min-height: 100vh;
+    z-index: 500;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+}
+
+.demo{
+    margin-top: 9px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 9px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.demo label span {
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1.69px;
+    color:  darkblue;
+}
+
+
+button {
+
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    font-size: 11px;
+    user-select: none;
+    font-weight: bold;
+    letter-spacing: 1.69px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px;
+    border: 0px;
+}
+
+button:hover {
+    box-shadow: 0.3px 0.3px 1px;
+}
+
+.canvasinside{
+    width: 169px;
+    height: 36px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    padding: 3px 6px;
+    box-sizing: border-box;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.69px;
+    background-color: yellow;
+}
