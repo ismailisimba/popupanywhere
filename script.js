@@ -420,6 +420,7 @@ function makePopUp(settingsObject){
 
     popUp["ele"] = pop;
     popUp["styles"] = tempStyles;
+    console.log(settingsObject);
 
     mom.addEventListener(settingsObject.action,showPopUp)
 };

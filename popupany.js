@@ -79,7 +79,7 @@ class popupany {
                     settings_28092021utc3ismizo.obj.side = this.findAvailPosition(this.getOffsetObj(obj.parent),obj.parent);
                     settings_28092021utc3ismizo.obj.content = this.fillBasicList();
 
-                }else if("style" in obj && obj.style === "custom" && obj.parent && obj.parent.nodeType){
+                }else if("style" in obj && "color" in obj.style && obj.parent && obj.parent.nodeType){
                     //matchCustomStyle
                     settings_28092021utc3ismizo.obj.style = this. matchInputObjStyle(obj.style);
 
@@ -88,13 +88,13 @@ class popupany {
                      settings_28092021utc3ismizo.obj.content = this.fillBasicList();
                 }
 
-                if("content" in obj && obj.content === "auto" && obj.parent && obj.parent.nodeType){
+                if("content" in obj && "basic-action" in obj.content && obj.parent && obj.parent.nodeType){
                     //addInternalTempList
                     settings_28092021utc3ismizo.obj.content = this.fillBasicList();
-                }else if("content" in obj && obj.content === "basiclist" && obj.parent && obj.parent.nodeType){
+                }else if("content" in obj && "basic-action" in obj.content && "custom" in obj.content && obj.parent && obj.parent.nodeType){
                     //readAddedBasicList
                     settings_28092021utc3ismizo.obj.content = this.readContentInput();
-                }else if("content" in obj && obj.content === "menulist" && obj.parent && obj.parent.nodeType){
+                }else if("content" in obj && Array.isArray(obj.content) && obj.parent && obj.parent.nodeType){
                     //readAddedMenuList
                     settings_28092021utc3ismizo.obj.content = this.readContentInput();
                 }else if(obj.parent && obj.parent.nodeType){
@@ -129,7 +129,7 @@ class popupany {
                      "z-index":"inherit",
                     },
             "action":"click",
-            "content":{"basicaction":["val","return val"],
+            "content":{"basic-action":["val","return val"],
                         "basiclist-items":["item1","item2","item3"]},
             "x":"xx",
         }
