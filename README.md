@@ -1,5 +1,5 @@
 # Pop Up Anywhere JS Module
-This module allows you to create a pop-up menu - like those found in Windows or Mac's right-click. 
+This module allows you to create a pop-up menu - like those found in Windows or Mac's right-click. Try it out [here](https://ismailisimba.github.io/popupanywhere/). Check out the console every time you double click or click update settings.
 
 ## Downloading & Installing
 The module can be downloaded directly from [Github](https://ismailisimba.github.io/popupanywhere/popupany.js) and included in your project files for ease of use.
