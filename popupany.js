@@ -34,8 +34,32 @@ class popupany {
             if(typeof obj ==="object"){
                 settings_28092021utc3ismizo.obj = this.makeBasicObj();
                 parEle = obj.parent;
-                document.body.addEventListener("contextmenu",this.removePopUp);
-                document.body.addEventListener("dbclick",this.removePopUp);
+                document.body.addEventListener("contextmenu",(e)=>{
+                    const arr = document.querySelectorAll(".themostspecialpopupevermade");
+                    arr.forEach(ele=>{
+                        ele.remove();
+                    })
+                
+                    const arr2 = document.body.querySelectorAll("#hollastylespopup") ;
+                    if(Array.isArray(arr2)){
+                        arr2.forEach(ele=>{
+                            ele.remove();
+                        })
+                    }
+                });
+                document.body.addEventListener("dbclick",(e)=>{
+                    const arr = document.querySelectorAll(".themostspecialpopupevermade");
+                    arr.forEach(ele=>{
+                        ele.remove();
+                    })
+                
+                    const arr2 = document.body.querySelectorAll("#hollastylespopup") ;
+                    if(Array.isArray(arr2)){
+                        arr2.forEach(ele=>{
+                            ele.remove();
+                        })
+                    }
+                });
 
                 if("auto" in obj && obj.auto === "auto" && obj.parent && obj.parent.nodeType){
                     //matchParentStyle
