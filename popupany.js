@@ -34,9 +34,8 @@ class popupany {
             if(typeof obj ==="object"){
                 settings_28092021utc3ismizo.obj = this.makeBasicObj();
                 parEle = obj.parent;
-                document.body.addEventListener("contextmenu",(e)=>{
-                    removePopUp();
-                })
+                document.body.addEventListener("contextmenu",this.removePopUp);
+                document.body.addEventListener("dbclick",this.removePopUp);
 
                 if("auto" in obj && obj.auto === "auto" && obj.parent && obj.parent.nodeType){
                     //matchParentStyle
