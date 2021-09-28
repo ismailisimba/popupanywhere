@@ -1,11 +1,11 @@
-#Pop Up Anywhere JS Module
+# Pop Up Anywhere JS Module
 This module allows you to create a pop-up menu - like those found in Windows or Mac's right-click. 
 
-##Downloading & Installing
+## Downloading & Installing
 The module can be downloaded directly from [Github](https://ismailisimba.github.io/popupanywhere/popupany.js) and included in your project files for ease of use.
 The module can also be imported from [https://ismailisimba.github.io/popupanywhere/popupany.js](https://ismailisimba.github.io/popupanywhere/popupany.js)
 
-##How To Use
+## How To Use
 The module has three modes. In mode one - auto -, the module will automatically find the space to show your pop up and will apply automatic styles based on the parent element - the element that when clicked will show the popup by the side.
 
 See the code example below:
@@ -70,7 +70,7 @@ let pop = new popupany();
 pop.makeAPop(obj)
 ```
 
-##License
+## License
 Copyright 2021 Ismaili Simba - https://github.com/ismailisimba
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
