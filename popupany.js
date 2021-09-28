@@ -40,7 +40,7 @@ class popupany {
                         ele.remove();
                     })
                 
-                    
+
                     const arr2 = document.body.querySelectorAll("#hollastylespopup") ;
                     if(Array.isArray(arr2)){
                         arr2.forEach(ele=>{
@@ -423,8 +423,24 @@ class popupany {
     }
 
     showPopUp () {
-        document.body.appendChild(popUp.ele);
-        document.body.appendChild(popUp.styles);
+        if(document.querySelectorAll(".themostspecialpopupevermade").length>=1){
+            const arr = document.querySelectorAll(".themostspecialpopupevermade");
+            arr.forEach(ele=>{
+                ele.remove();
+            })
+        
+            const arr2 = document.body.querySelectorAll("#hollastylespopup") ;
+            if(Array.isArray(arr2)){
+                arr2.forEach(ele=>{
+                    ele.remove();
+                })
+            }
+
+        }else{
+            document.body.appendChild(popUp.ele);
+            document.body.appendChild(popUp.styles);
+        }
+       
     }
     
     removePopUp(){
