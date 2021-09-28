@@ -79,7 +79,7 @@ class popupany {
 
 
                 //popUpfuncs
-                this.makePopUp(settings_28092021utc3ismizo.obj,parEle);
+                this.makePopUp(settings_28092021utc3ismizo.obj,obj.parent);
             }else{
                 fillObjectObj.error = "Error: Invalid Object Structure."
                 
