@@ -230,7 +230,7 @@ class popupany {
        
             
         if("basiclist-items" in obj2.content){
-            obj = JSON.parse(obj2.content);
+            obj = JSON.parse(JSON.stringify(obj2.content));
         }else if(Array.isArray(obj2.content)){
             obj = JSON.parse(obj2.content);
         }else{
