@@ -202,7 +202,7 @@ class popupany {
     readContentInput(obj2){
         let obj = {};
     
-        let timeReadLapse = window.setTimeout(()=>{
+       
             
         if(obj2.content==="basiclist"){
             obj = JSON.parse(obj2["basiclist-items"]);
@@ -213,8 +213,8 @@ class popupany {
          obj= obj2;
         
         }
-            window.clearTimeout(timeReadLapse);
-        },69)
+         
+        
     
     
         return obj;

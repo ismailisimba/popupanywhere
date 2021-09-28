@@ -324,6 +324,7 @@ function makePopUp(settingsObject){
         color:white;
         background-color:black;
     }`;
+    
 
     if("action" in settingsObject.content){
        
@@ -544,20 +545,19 @@ function matchInputObjStyle(obj){
 function readContentInput(){
     let obj = {};
 
-    let timeReadLapse = window.setTimeout(()=>{
+
         
     if(inputObj.content==="basiclist"){
         obj = JSON.parse(inputObj["basiclist-items"]);
     }else if(inputObj.content==="menulist"){
         obj = JSON.parse(inputObj.menulist);
     }else{
-      let obj2 = fillBasicList();  
-     obj= obj2;
+      obj = fillBasicList();  
     
     }
-        window.clearTimeout(timeReadLapse);
-    },169)
+       
+    
 
-
+    
     return obj;
 }
