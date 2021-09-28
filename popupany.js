@@ -11,7 +11,11 @@ class popupany {
         this.info["author"] = "ismizo";
         this.info["pubDate"] = "28th Sept, 2021, UTC + 3";
         this.info["version"] = "1.0.0.0.0.0";
-        this.info["archive"] = "no-archive-yet";
+        this.info["archive"] = "https://github.com/ismailisimba/popupanywhere";
+        this.info["help"] = "https://github.com/ismailisimba/popupanywhere";
+        this.info["howto"] = "https://github.com/ismailisimba/popupanywhere";
+        this.info["github"] = "https://github.com/ismailisimba/popupanywhere";
+        this.info["git"] = "https://github.com/ismailisimba/popupanywhere";
 
         this.makeAPop = this.makeAPop;
         this.fillObject = this.fillObject;
